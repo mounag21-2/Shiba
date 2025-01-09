@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./yes_style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Sending you a virtual cake</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmo0azRsanRjdndidm1hOXFqeXc2MDlkdW1vYmJ2aG91cmc4aXAxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Im6d35ebkCIiGzonjI/giphy.webp" alt="Cute animated illustration">
+            </div>
+            
+            <div >
+                <h1  class = "header_text">You wanna have some?😁</h1>
+            </div>
+
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "page3cakeyes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div> 
+
+        </div>
+       
+       
+    </body> 
+</html>
